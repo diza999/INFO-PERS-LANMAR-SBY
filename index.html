@@ -21,6 +21,16 @@ body {
     color: white;
 }
 
+/* BACKGROUND FOTO HALAMAN HOME */
+#homePage {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("LANMAR.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .page {
     display: none;
     min-height: 100vh;
@@ -94,13 +104,24 @@ body {
     padding: 35px;
     border: 1px solid rgba(255, 193, 7, .25);
     border-radius: 22px;
-    background: rgba(20, 20, 20, .92);
+
+    background:
+        linear-gradient(rgba(20, 20, 20, .82), rgba(20, 20, 20, .82)),
+        url("LANMAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     box-shadow: 0 20px 60px rgba(0,0,0,.55);
+    text-align: center;
 }
 
 .login-logo {
     width: 220px;
     height: 150px;
+    display: block;
+    margin: 0 auto;
     object-fit: contain;
 }
 
@@ -109,6 +130,7 @@ body {
     margin: 10px 0 25px;
     font-size: 24px;
     font-weight: 800;
+    text-align: center;
 }
 
 .form-group {
@@ -174,7 +196,7 @@ body {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -485,8 +507,8 @@ body {
             🔐 LOGIN
         </button>
 
-        <div class="footer" style="text-align:center;">
-            CopyRight@ Mas Har
+        <div class="footer" style="text-align:center;margin-top:70px;">
+            CopyRight by @MasHar Tahun 2026
         </div>
     </div>
 </section>
@@ -542,8 +564,8 @@ body {
 
         </form>
 
-        <div class="footer" style="text-align:center;">
-            CopyRight@ Mas Har
+         <div class="footer" style="text-align:center;margin-top:70px;">
+            CopyRight by @MasHar Tahun 2026
         </div>
 
     </div>
@@ -582,12 +604,6 @@ body {
                 <h3>PENSIUN PRAJURIT</h3>
             </button>
 
-            <button class="menu-card"
-                    onclick="alert('Menu SIP Rumdis dipilih')">
-                <div class="menu-icon">🏠</div>
-                <h3>SIP RUMDIS</h3>
-            </button>
-
         </div>
 
         <div style="text-align:center;">
@@ -595,6 +611,10 @@ body {
                 🚪 LOGOUT
             </button>
         </div>
+
+         <div class="footer" style="text-align:center;margin-top:70px;">
+            CopyRight by @MasHar Tahun 2026
+        </div> 
 
     </div>
 </section>
@@ -616,10 +636,6 @@ body {
             <h1 class="pangkat-title">
                 INFO PERS LANMAR SURABAYA
             </h1>
-
-            <p class="pangkat-subtitle">
-                MENU KENAIKAN PANGKAT PRAJURIT
-            </p>
 
         </div>
 
@@ -656,6 +672,10 @@ body {
                     onclick="showPage('dashboardPage')">
                 ⬅️ KEMBALI KE DASHBOARD
             </button>
+        </div>
+
+         <div class="footer" style="text-align:center;margin-top:70px;">
+            CopyRight by @MasHar Tahun 2026
         </div>
 
     </div>
