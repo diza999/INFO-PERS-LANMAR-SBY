@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>INFO PERS LANMAR SURABAYA</title>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 * {
@@ -23,6 +25,8 @@ body {
 
 /* BACKGROUND FOTO HALAMAN HOME */
 #homePage {
+    min-height:100vh;
+    overflow:hidden;
     background:
         linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, .28)),
         url("LANMAR.png");
@@ -30,6 +34,20 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+#homePage .container{
+    height:calc(100vh - 60px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#homePage .footer{
+    margin-top:25px !important;
+}
+
 
 .page {
     display: none;
@@ -59,7 +77,7 @@ body {
 
 .title {
     margin-top: 10px;
-    color: #ffd54a;
+    color:  #f5b505;
     font-size: clamp(25px, 5vw, 48px);
     font-weight: 800;
     letter-spacing: 2px;
@@ -68,7 +86,7 @@ body {
 
 .subtitle {
     margin-top: 10px;
-    color: #ddd;
+    color:  #f5b505;
     font-size: 16px;
 }
 
@@ -98,6 +116,7 @@ body {
     margin-left: 8px;
 }
 
+
 .login-box {
     width: 100%;
     max-width: 430px;
@@ -106,8 +125,11 @@ body {
     border-radius: 22px;
 
     background:
-        linear-gradient(rgba(20, 20, 20, .82), rgba(20, 20, 20, .28)),
-        url("LANMAR.png");
+        linear-gradient(
+            rgba(20, 20, 20, .82),
+            rgba(20, 20, 20, .28)
+        ),
+        url("LOGIN.png");
 
     background-size: cover;
     background-position: center;
@@ -116,6 +138,7 @@ body {
     box-shadow: 0 20px 60px rgba(0,0,0,.55);
     text-align: center;
 }
+
 
 .login-logo {
     width: 220px;
@@ -133,6 +156,31 @@ body {
     text-align: center;
 }
 
+/* =========================================
+   BACKGROUND KHUSUS HALAMAN LOGIN
+   ========================================= */
+
+#loginPage {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+
+    
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("backgroundterang.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+
+
 .form-group {
     text-align: left;
     margin-bottom: 18px;
@@ -141,7 +189,7 @@ body {
 .form-group label {
     display: block;
     margin-bottom: 7px;
-    color: #ddd;
+    color: #f5b505;
     font-size: 14px;
 }
 
@@ -174,6 +222,18 @@ body {
 .dashboard {
     width: 100%;
     max-width: 1100px;
+
+    background:
+        linear-gradient(rgba(20, 20, 20, .45), rgba(20, 20, 20, .45)),
+        url("LANMAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.55);
 }
 
 .dashboard-header {
@@ -205,7 +265,15 @@ body {
     padding: 28px 20px;
     border-radius: 20px;
     border: 1px solid rgba(255, 193, 7, .22);
-    background: linear-gradient(145deg, rgba(45,45,45,.95), rgba(15,15,15,.95));
+
+    background:
+        linear-gradient(rgba(20, 20, 20, .45), rgba(20, 20, 20, .45)),
+        url("LANMAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,7 +304,7 @@ body {
 
 .footer {
     margin-top: 30px;
-    color: #888;
+    color:  #f5b505;
     font-size: 13px;
 }
 
@@ -247,7 +315,15 @@ body {
 .pangkat-page {
     width: 100%;
     max-width: 1100px;
-}
+
+    background:
+        linear-gradient(rgba(20, 20, 20, .45), rgba(20, 20, 20, .45)),
+        url("LANMAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   }
 
 .pangkat-header {
     text-align: center;
@@ -255,6 +331,7 @@ body {
 }
 
 .pangkat-logo {
+    margin-top: 20px;
     width: min(360px, 70vw);
     height: 230px;
     object-fit: contain;
@@ -271,7 +348,7 @@ body {
 
 .pangkat-subtitle {
     margin-top: 8px;
-    color: #ddd;
+    color: #ffd54a;
     font-size: 16px;
 }
 
@@ -290,7 +367,11 @@ body {
     border-radius: 20px;
     cursor: pointer;
     color: white;
-    background: linear-gradient(145deg, rgba(45,45,45,.97), rgba(12,12,12,.97));
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     box-shadow: 0 12px 35px rgba(0,0,0,.35);
     display: flex;
     flex-direction: column;
@@ -298,6 +379,39 @@ body {
     justify-content: center;
     text-align: center;
     transition: .25s;
+}
+
+
+.pangkat-card:nth-child(1) {
+    background:
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
+        url("foto 1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.pangkat-card:nth-child(2) {
+    background:
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
+        url("images.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.pangkat-card:nth-child(3) {
+    background:
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
+        url("foto 1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.pangkat-card:nth-child(4) {
+    background:
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
+        url("images.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .pangkat-card:hover {
@@ -326,6 +440,160 @@ body {
 /* =====================================
    HALAMAN REGULER PERWIRA
 ===================================== */
+#regulerPerwiraPage{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#penghargaanPerwiraPage{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =====================================
+   HALAMAN PENSIUN PRAJURIT
+===================================== */
+
+#persyaratanPensiunPage{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");   /* Ganti dengan nama file background */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#persyaratanPensiunPage .pensiun-page{
+    width:100%;
+    max-width:1050px;
+    padding:35px;
+    border-radius:22px;
+
+    background:
+        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
+        url("pensiun.jpg");   /* Ganti dengan nama file background */
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+}
+
+/* =====================================
+   HALAMAN PENGHARGAAN BINTARA DAN TAMTAMA
+===================================== */
+
+#penghargaanBintaraTamtamaPage{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");   /* ganti dengan nama file background */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.penghargaan-bintara-page{
+    width:100%;
+    max-width:1050px;
+    padding:35px;
+    border-radius:22px;
+
+    background:
+        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
+        url("foto_bintara.jpg");   /* ganti dengan nama file background */
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+}
+
+/* =====================================
+   HALAMAN MEKANISME PENSIUN
+===================================== */
+
+#mekanismePensiunPage{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#mekanismePensiunPage .mekanisme-pensiun-page{
+    width:100%;
+    max-width:1050px;
+    padding:35px;
+    border-radius:22px;
+
+    background:
+        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
+        url("mekanisme.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+}
+
+
+
+/* =====================================
+   HALAMAN TABEL KENAIKAN PANGKAT
+===================================== */
+
+#tabelKenkatPage{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");   /* Ganti dengan nama file background */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#tabelKenkatPage .tabel-kenkat-page{
+    width:100%;
+    max-width:1600px;
+    margin:0 auto;
+    padding:20px;
+    border-radius:22px;
+
+    background:
+        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
+        url("tabel_bg.jpg");   /* Ganti dengan nama file background */
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+}
+
+
 .reguler-page {
     width: 100%;
     max-width: 1050px;
@@ -353,7 +621,7 @@ body {
 
 .reguler-subtitle {
     margin-top: 8px;
-    color: #ddd;
+    color: #ffd54a;
     font-size: 15px;
 }
 
@@ -361,8 +629,11 @@ body {
     width: 100%;
     padding: 28px 32px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 193, 7, .28);
-    background: linear-gradient(145deg, rgba(35,35,35,.97), rgba(12,12,12,.97));
+    border: 1px solid rgba(255,193,7,.28);
+
+    background: rgba(15,15,15,.65);
+    backdrop-filter: blur(6px);
+
     box-shadow: 0 15px 40px rgba(0,0,0,.4);
     text-align: left;
 }
@@ -469,6 +740,158 @@ body {
     content: counter(syarat);
 }
 
+/* =========================================
+   TOMBOL WHATSAPP ADMIN
+   DI DALAM BACKGROUND DASHBOARD
+========================================= */
+
+#dashboardPage .admin-wa {
+    position: absolute !important;
+
+    right: 40px !important;
+    bottom: 80px !important;
+
+    width: 130px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 7px !important;
+
+    background: #25D366 !important;
+    color: white !important;
+
+    border-radius: 10px !important;
+
+    text-decoration: none !important;
+
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35) !important;
+
+    z-index: 9999 !important;
+
+    transition: all .25s ease !important;
+}
+
+#dashboardPage .admin-wa:hover {
+    background: #20bd5a !important;
+    transform: translateY(-2px) !important;
+}
+
+#dashboardPage .whatsapp-logo {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+/* =========================================
+   TOMBOL WHATSAPP ADMIN
+========================================= */
+
+.dashboard {
+    position: relative !important;
+}
+
+.dashboard .admin-wa {
+    position: absolute !important;
+
+    right: 30px !important;
+    bottom: 30px !important;
+
+    width: 200px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 7px !important;
+
+    background: #25D366 !important;
+    color: #ffffff !important;
+
+    border-radius: 10px !important;
+
+    text-decoration: none !important;
+
+    font-family: "Segoe UI", Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35) !important;
+
+    z-index: 9999 !important;
+
+    cursor: pointer !important;
+
+    transition: all .25s ease !important;
+}
+
+.dashboard .admin-wa:hover {
+    background: #20bd5a !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-2px) !important;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .45) !important;
+}
+
+.dashboard .whatsapp-logo {
+    width: 30px !important;
+    height: 30px !important;
+
+    display: block !important;
+
+    flex-shrink: 0 !important;
+}
+
+/* Tombol WhatsApp Halaman Pangkat */
+
+.pangkat-page{
+    position:relative;
+}
+
+.pangkat-admin{
+    position:absolute;
+    right:30px;
+    bottom:30px;
+}
+
+.pangkat-admin .admin-wa{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    background:#25D366;
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:10px 16px;
+    border-radius:10px;
+
+    font-weight:700;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+
+    transition:.25s;
+}
+
+.pangkat-admin .admin-wa:hover{
+    background:#20bd5a;
+    transform:translateY(-2px);
+}
+
+.pangkat-admin .whatsapp-logo{
+    width:30px;
+    height:30px;
+}
+
 </style>
 
 <style>
@@ -484,6 +907,7 @@ body {
 </style>
 
 </head>
+
 
 <body>
 
@@ -612,6 +1036,25 @@ body {
             </button>
         </div>
 
+    <a href="https://wa.me/6281231178171"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="admin-wa">
+
+    <svg class="whatsapp-logo"
+         viewBox="0 0 32 32"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+
+        <path fill="#FFFFFF"
+              d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47ZM16.01 24.7c-1.65 0-3.27-.44-4.68-1.27l-.34-.2-3.23.85.86-3.15-.22-.35a8.82 8.82 0 1 1 7.61 4.12Zm4.84-6.61c-.26-.13-1.55-.76-1.79-.84-.24-.09-.42-.13-.6.13-.18.26-.68.84-.83 1.01-.15.18-.31.2-.57.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.28-1.51-1.43-1.77-.15-.26-.02-.4.11-.53.12-.12.26-.31.39-.46.13-.15.17-.26.26-.44.09-.18.04-.33-.02-.46-.07-.13-.6-1.43-.82-1.96-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.46.07-.7.33-.24.26-.91.89-.91 2.17s.93 2.52 1.06 2.7c.13.18 1.83 2.8 4.44 3.92.62.27 1.1.43 1.48.55.62.2 1.19.17 1.64.1.5-.07 1.55-.63 1.77-1.24.22-.61.22-1.13.15-1.24-.06-.11-.24-.18-.5-.31Z"/>
+    </svg>
+
+    <span>Kapten Mar Yudi Wiyanto</span>
+
+</a>
+        
          <div class="footer" style="text-align:center;margin-top:70px;">
             CopyRight by @MasHar Tahun 2026
         </div> 
@@ -673,6 +1116,27 @@ body {
                 ⬅️ KEMBALI KE DASHBOARD
             </button>
         </div>
+
+        <div class="pangkat-admin">
+    <a href="https://wa.me/6281231178171"
+       target="_blank"
+       class="admin-wa">
+
+        <svg class="whatsapp-logo"
+             viewBox="0 0 32 32"
+             xmlns="http://www.w3.org/2000/svg">
+
+            <circle cx="16" cy="16" r="16" fill="#25D366"/>
+
+            <path fill="#FFFFFF"
+            d="M23.5 8.5A10.55 10.55 0 0 0 16 5.4c-5.84 0-10.6 4.76-10.6 10.6 0 1.87.49 3.7 1.42 5.3L5.3 26.6l5.44-1.43a10.58 10.58 0 0 0 5.26 1.4h.01c5.84 0 10.6-4.76 10.6-10.6 0-2.83-1.1-5.49-3.11-7.47Z"/>
+        </svg>
+
+        <span>Kapten Mar Yudi Wiyanto</span>
+
+    </a>
+    </div>
+
 
          <div class="footer" style="text-align:center;margin-top:70px;">
             CopyRight by @MasHar Tahun 2026
@@ -809,7 +1273,7 @@ body {
      HALAMAN KENAIKAN PANGKAT PENGHARGAAN BINTARA DAN TAMTAMA
 ========================= -->
 <section id="penghargaanBintaraTamtamaPage" class="page">
-    <div class="reguler-page">
+    <div class="reguler-page penghargaan-bintara-page">
 
         <div class="reguler-header">
 
@@ -888,7 +1352,7 @@ body {
 
 
 <section id="tabelKenkatPage" class="page">
-  <div class="kenkat-page">
+  <div class="kenkat-page tabel-kenkat-page">
     <div class="kenkat-header">
       <h1>TABEL KENAIKAN PANGKAT</h1>
       <p>INFO PERS LANMAR SURABAYA</p>
@@ -915,13 +1379,32 @@ body {
 // NAVIGASI HALAMAN
 // =====================================
 function showPage(pageId) {
+
+    // Sembunyikan semua halaman
     document.querySelectorAll('.page').forEach(page => {
         page.classList.remove('active');
+        page.style.display = '';
     });
 
-    document.getElementById(pageId).classList.add('active');
-}
+    // Tampilkan halaman yang dipilih
+    const targetPage = document.getElementById(pageId);
 
+    if (targetPage) {
+        targetPage.classList.add('active');
+
+        // Home tidak bisa discroll
+        if (pageId === "homePage") {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+    }
+}
 
 // =====================================
 // LOGIN SEDERHANA
@@ -935,21 +1418,24 @@ function login(event) {
     const password = document.getElementById('password').value;
     const error = document.getElementById('loginError');
 
-    if (username === 'admin' && password === '123456') {
+    if (username === 'siprumdis' && password === '123456') {
 
+        // Hilangkan pesan error
         error.style.display = 'none';
 
+        // Kosongkan form
         document.getElementById('username').value = '';
         document.getElementById('password').value = '';
 
+        // Pindah ke Dashboard
         showPage('dashboardPage');
 
     } else {
 
         error.style.display = 'block';
-
     }
 }
+
 
 
 // =====================================
@@ -961,12 +1447,86 @@ function logout() {
 </script>
 
 
-<section id="pensiunPage" class="page"><div class="pangkat-page"><div class="pangkat-header"><img src="LOGO LANMAR EMAS.png" class="pangkat-logo"><h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1><p class="pangkat-subtitle">PENSIUN PRAJURIT</p></div><div class="pangkat-menu"><button class="pangkat-card" onclick="showPage('persyaratanPensiunPage')"><div class="pangkat-icon">📋</div><h3>PERSYARATAN PENSIUN</h3></button><button class="pangkat-card" onclick="showPage('mekanismePensiunPage')"><div class="pangkat-icon">⚙️</div><h3>SISTEM DAN MEKANISME PENSIUN</h3></button></div><div class="pangkat-back"><button class="btn secondary" onclick="showPage('dashboardPage')">⬅️ KEMBALI KE DASHBOARD</button></div><div class="footer" style="text-align:center;">CopyRight@ Mas Har</div></div></section>
-<section id="persyaratanPensiunPage" class="page"><div class="reguler-page"><div class="reguler-header"><img src="LOGO LANMAR EMAS.png" class="reguler-logo"><h1 class="reguler-title">PERSYARATAN PENSIUN</h1></div><div class="syarat-box"><ol class="syarat-list"><li>FOTOCOPY SURAT TELEGRAM MPP / TIDAK MPP ANGGOTA</li><li>FOTOCOPY PERINCIAN SLIP GAJI TERAKHIR</li><li>FOTOCOPY KU-1</li><li>FOTOCOPY SURAT MENIKAH</li><li>FOTOCOPY KPI</li><li>FOTOCOPY INFASING PERTAMA DAN TERAKHIR</li><li>FOTOCOPY DAFTAR RIWAYAT HIDUP</li><li>FOTOCOPY KARTU ASABRI</li><li>FOTOCOPY SURAT KETERANGAN DOMISILI</li><li>FOTOCOPY KK SIPIL</li><li>FOTOCOPY NPWP</li><li>FOTO 4X6 SUAMI ISTRI MASING-MASING 16 LEMBAR</li><li>FOTOCOPY SKEP CACAT PANG TNI (JIKA PUNYA)</li><li>FOTOCOPY SURAT KET KULIAH ANAK</li><li>FOTOCOPY SL JALASENA NARARYA</li><li>FOTOCOPY SKEP CACAT PANG TNI (JIKA PUNYA)</li></ol></div><button class='btn secondary' onclick="showPage('pensiunPage')">⬅️ KEMBALI</button></div></section>
+<section id="pensiunPage" class="page">
+    <div class="pangkat-page">
+        <div class="pangkat-header">
+            <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
+            <h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1>
+            <p class="pangkat-subtitle">PENSIUN PRAJURIT</p>
+        </div>
+        
+        <div class="pangkat-menu">
+            <button class="pangkat-card" onclick="showPage('persyaratanPensiunPage')">
+                <div class="pangkat-icon">📋</div>
+                <h3>PERSYARATAN PENSIUN</h3>
+            </button><button class="pangkat-card" onclick="showPage('mekanismePensiunPage')">
+                <div class="pangkat-icon">⚙️</div>
+                <h3>SISTEM DAN MEKANISME PENSIUN</h3>
+            </button>
+        </div>
+
+            <div class="pangkat-back">
+                <button class="btn secondary" onclick="showPage('dashboardPage')">⬅️ KEMBALI KE DASHBOARD</button>
+            </div>
+            
+            <div class="footer" style="text-align:center;">
+            CopyRight@ Mas Har
+            </div>
+
+        </div>
+</section>
+
+<section id="persyaratanPensiunPage" class="page">
+    <div class="reguler-page pensiun-page">
+        <div class="reguler-header">
+            <img src="LOGO LANMAR EMAS.png" class="reguler-logo">
+            <h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1>
+            <p class="pangkat-subtitle">PENSIUN PRAJURIT</p>
+        </div>
+        
+        <div class="syarat-box">
+            <ol class="syarat-list">
+                <li>FOTOCOPY SURAT TELEGRAM MPP / TIDAK MPP ANGGOTA</li>
+                <li>FOTOCOPY PERINCIAN SLIP GAJI TERAKHIR</li>
+                <li>FOTOCOPY KU-1</li>
+                <li>FOTOCOPY SURAT MENIKAH</li>
+                <li>FOTOCOPY KPI</li>
+                <li>FOTOCOPY INFASING PERTAMA DAN TERAKHIR</li>
+                <li>FOTOCOPY DAFTAR RIWAYAT HIDUP</li>
+                <li>FOTOCOPY KARTU ASABRI</li>
+                <li>FOTOCOPY SURAT KETERANGAN DOMISILI</li>
+                <li>FOTOCOPY KK SIPIL</li>
+                <li>FOTOCOPY NPWP</li>
+                <li>FOTO 4X6 SUAMI ISTRI MASING-MASING 16 LEMBAR</li>
+                <li>FOTOCOPY SKEP CACAT PANG TNI (JIKA PUNYA)</li>
+                <li>FOTOCOPY SURAT KET KULIAH ANAK</li>
+                <li>FOTOCOPY SL JALASENA NARARYA</li>
+                <li>FOTOCOPY SKEP CACAT PANG TNI (JIKA PUNYA)</li>
+            </ol>
+        </div>
+        
+         <div class="reguler-back">
+
+            <button class="btn secondary"
+                    onclick="showPage('pensiunPage')">
+                ⬅️ KEMBALI KE PENSIUN PRAJURIT
+            </button>
+
+            <button class="btn secondary"
+                    onclick="showPage('dashboardPage')">
+                ⬅️ KEMBALI KE DASHBOARD
+            </button>
+
+        </div>
+
+        <div class="footer" style="text-align:center;">
+            CopyRight@ Mas Har
+        </div>
+    </div>
+</section>
 
 <section id="mekanismePensiunPage" class="page">
-    <div class="reguler-page">
-
+    <div class="reguler-page mekanisme-pensiun-page">
         <div class="reguler-header">
 
             <img src="LOGO LANMAR EMAS.png"
@@ -977,10 +1537,7 @@ function logout() {
                 INFO PERS LANMAR SURABAYA
             </h1>
 
-            <p class="reguler-subtitle">
-                SISTEM DAN MEKANISME PENSIUN
-            </p>
-
+            
         </div>
 
         <div class="syarat-box">
@@ -989,7 +1546,7 @@ function logout() {
                 SISTEM DAN MEKANISME PENSIUN
             </h2>
 
-            <ol class="syarat-list mekanisme-list">
+            <ol class="syarat-list">
 
                 <li>
                     Watpers Lanmar Surabaya menerima berkas usulan pensiun dari satlak.
