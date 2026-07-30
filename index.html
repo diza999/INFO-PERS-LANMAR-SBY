@@ -532,7 +532,7 @@ body {
 }
 
 /* =====================================
-   HALAMAN MEKANISME PENSIUN
+   HALAMAN MEKANISME PENSIUN 
 ===================================== */
 
 #mekanismePensiunPage{
@@ -563,6 +563,86 @@ body {
     box-shadow:0 20px 60px rgba(0,0,0,.55);
 }
 
+.mekanismePensiunPage-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================
+   HALAMAN PESIUN KOLOM  
+===================================== */
+
+#PensiunPage{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#PensiunPage .pensiun-page{
+    width:100%;
+    max-width:1050px;
+    padding:35px;
+    border-radius:22px;
+
+    background:
+        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
+        url("mekanisme.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+}
+
+.PensiunPage-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================
+   HALAMAN PESIUN KOLOM  persyaratanPensiunPage
+===================================== */
+
+#persyaratanPensiunPage{
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#persyaratanPensiunPage .persyaratanPensiunPage-page{
+    width:100%;
+    max-width:1050px;
+    padding:35px;
+    border-radius:22px;
+
+    background:
+        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
+        url("mekanisme.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+}
+
+.persyaratanPensiunPage-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 
 /* =====================================
@@ -1445,8 +1525,8 @@ function logout() {
 
 
 <section id="pensiunPage" class="page">
-    <div class="pangkat-page">
-        <div class="pangkat-header">
+    <div class="pensiunPage">
+        <div class="PensiunPage-header">
             <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
             <h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1>
             <p class="pangkat-subtitle">PENSIUN PRAJURIT</p>
@@ -1474,8 +1554,8 @@ function logout() {
 </section>
 
 <section id="persyaratanPensiunPage" class="page">
-    <div class="reguler-page pensiun-page">
-        <div class="reguler-header">
+    <div class="persyaratanPensiunPage-page">
+        <div class="persyaratanPensiunPage-header">
             <img src="LOGO LANMAR EMAS.png" class="reguler-logo">
             <h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1>
             <p class="pangkat-subtitle">PENSIUN PRAJURIT</p>
@@ -1523,8 +1603,8 @@ function logout() {
 </section>
 
 <section id="mekanismePensiunPage" class="page">
-    <div class="reguler-page mekanisme-pensiun-page">
-        <div class="reguler-header">
+    <div class="mekanisme-pensiun-page">
+        <div class="mekanismePensiunPage-header">
 
             <img src="LOGO LANMAR EMAS.png"
                  class="reguler-logo"
