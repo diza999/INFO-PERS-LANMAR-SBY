@@ -55,7 +55,7 @@ body {
     width:100%;
     padding:30px 20px;
     align-items:center;
-    justify-content:flex-start;
+    justify-content:center;
 }
 
 .page.active {
@@ -720,6 +720,9 @@ body {
 .reguler-page {
     width: 100%;
     max-width: 1050px;
+    text-align: center;
+    justify-content:center;
+
      background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -856,6 +859,13 @@ body {
         box-sizing:border-box;
     }
 
+    .menu-card{
+        width:100%;
+        max-width:300px;        /* Lebar tombol dibatasi */
+        min-height:120px;
+        padding:15px;
+    }
+
     .pangkat-card{
         width:100%;
         max-width:300px;        /* Lebar tombol dibatasi */
@@ -885,6 +895,10 @@ body {
     .pangkat-page{
     padding:0 20px;
     box-sizing:border-box;
+    }
+
+    .kenkat-image{
+        min-width:1000px;
     }
 
 }
@@ -1068,11 +1082,7 @@ body {
     margin-top:auto;   /* Mendorong footer ke bawah */
 }
 
-@media(max-width:800px){
-    .kenkat-image{
-        min-width:1000px;
-    }
-}
+
 </style>
 
 </head>
