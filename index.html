@@ -219,21 +219,41 @@ body {
     font-size: 14px;
 }
 
-.dashboard {
-    width: 100%;
-    max-width: 900px;
+.dashboard{
+    position:relative;
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
 
     background:
-        linear-gradient(rgba(20, 20, 20, .45), rgba(20, 20, 20, .45)),
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
         url("LANMAR.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-    padding: 35px;
-    border-radius: 22px;
-    box-shadow: 0 20px 60px rgba(0,0,0,.55);
+    overflow:hidden;
+}
+
+/* Khusus Dashboard */
+#dashboardPage .dashboard{
+    position:relative;
+}
+
+#dashboardPage .footer{
+    position:absolute;
+    bottom:15px;
+    left:0;
+    width:100%;
+    text-align:center;
+    color:#ffd54a;
+    margin:0;
+}
+
+#dashboardPage{
+    padding:0 !important;
+    overflow:hidden;
 }
 
 .dashboard-header {
@@ -314,18 +334,42 @@ body {
    HALAMAN KENAIKAN PANGKAT
 ===================================== */
 .pangkat-page {
-    width: 100%;
-    max-width: 1100px;
-    padding: 20px 30px;
+    position:relative;
+    width:100%;
+    height:100vh;
+    box-sizing:border-box;
 
     background:
-        linear-gradient(rgba(20, 20, 20, .45), rgba(20, 20, 20, .45)),
+        linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
         url("LANMAR.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    overflow:hidden;
    }
+
+#pangkatPage .pangkat-page {
+    position:relative;
+}
+
+#dashboardPage .footer{
+    position:absolute;
+    bottom:15px;
+    left:0;
+    width:100%;
+    text-align:center;
+    color:#ffd54a;
+    margin:0;
+}
+
+#pangkatPage{
+    padding:0 !important;
+    overflow:hidden;
+}
+
+
 
 .pangkat-header {
     text-align: center;
@@ -506,7 +550,7 @@ body {
 #penghargaanBintaraTamtamaPage{
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("LOGIN.png");   /* ganti dengan nama file background */
+        url("LOGIN.png");
 
     background-size: cover;
     background-position: center;
@@ -514,28 +558,24 @@ body {
     background-attachment: fixed;
 }
 
-.penghargaan-bintara-page{
-    width:100%;
-    max-width:1050px;
-    padding:35px;
-    border-radius:22px;
-
+#penghargaanPerwiraPage{
     background:
-        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
-        url("foto_bintara.jpg");   /* ganti dengan nama file background */
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.55);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 /* =====================================
    HALAMAN MEKANISME PENSIUN 
 ===================================== */
 
 #mekanismePensiunPage{
+    width: 100%;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -548,7 +588,6 @@ body {
 
 #mekanismePensiunPage .mekanisme-pensiun-page{
     width:100%;
-    max-width:1050px;
     padding:35px;
     border-radius:22px;
 
@@ -574,32 +613,18 @@ body {
 ===================================== */
 
 #PensiunPage{
+    width:100%;
+    height:100vh;
+
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#PensiunPage .pensiun-page{
-    width:100%;
-    max-width:1050px;
-    padding:35px;
-    border-radius:22px;
-
-    background:
-        linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
-        url("mekanisme.jpg");
-
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.55);
 }
+
 
 .PensiunPage-header {
     text-align: center;
@@ -612,6 +637,7 @@ body {
 ===================================== */
 
 #persyaratanPensiunPage{
+    width: 100%;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -624,7 +650,6 @@ body {
 
 #persyaratanPensiunPage .persyaratanPensiunPage-page{
     width:100%;
-    max-width:1050px;
     padding:35px;
     border-radius:22px;
 
@@ -695,6 +720,15 @@ body {
 .reguler-page {
     width: 100%;
     max-width: 1050px;
+     background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("LOGIN.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .reguler-header {
@@ -1066,7 +1100,7 @@ body {
             
         </p>
 
-        <div class="footer">
+        <div class="footer" style="text-align:center;margin-top:70px;">
             CopyRight by @MasHar Tahun 2026
         </div>
     </div>
@@ -1156,7 +1190,7 @@ body {
             </button>
 
             <button class="menu-card"
-                    onclick="showPage('pensiunPage')">
+                    onclick="showPage('PensiunPage')">
                 <div class="menu-icon">📋</div>
                 <h3>PENSIUN PRAJURIT</h3>
             </button>
@@ -1188,7 +1222,7 @@ body {
 
 </a>
         
-         <div class="footer">
+         <div class="footer" style="text-align:center;margin-top:70px;">
             CopyRight by @MasHar Tahun 2026
         </div> 
 
@@ -1250,7 +1284,7 @@ body {
             </button>
         </div>
 
-         <div class="footer">
+         <div class="footer" style="text-align:center;margin-top:70px;">
             CopyRight by @MasHar Tahun 2026
         </div>
 
@@ -1342,7 +1376,7 @@ body {
 
         </div>
 
-        <div class="footer">
+        <div class="footer" style="text-align:center;">
             CopyRight by @MasHar Tahun 2026
         </div>
 
@@ -1408,9 +1442,8 @@ body {
 <div class="reguler-back">
 <button class="btn secondary" onclick="showPage('pangkatPage')">⬅️ KEMBALI</button>
 </div>
-<div class="footer">
-            CopyRight by @MasHar Tahun 2026
-        </div>
+<div class="footer" style="text-align:center;">CopyRight by @MasHar Tahun 2026</div>
+</div>
 </section>
 
 
@@ -1488,7 +1521,7 @@ body {
 
         </div>
 
-        <div class="footer">
+        <div class="footer" style="text-align:center;">
             CopyRight by @MasHar Tahun 2026
         </div>
 
@@ -1598,8 +1631,8 @@ function logout() {
 </script>
 
 
-<section id="pensiunPage" class="page">
-    <div class="pensiunPage">
+<section id="PensiunPage" class="page">
+    <div class="PensiunPage">
         <div class="PensiunPage-header">
             <img src="LOGO LANMAR EMAS.png" class="pangkat-logo">
             <h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1>
@@ -1620,9 +1653,9 @@ function logout() {
                 <button class="btn secondary" onclick="showPage('dashboardPage')">⬅️ DASHBOARD</button>
             </div>
             
-            <div class="footer">
+            <div class="footer" style="text-align:center;">
             CopyRight by @MasHar Tahun 2026
-        </div>
+            </div>
 
         </div>
 </section>
@@ -1632,10 +1665,15 @@ function logout() {
         <div class="persyaratanPensiunPage-header">
             <img src="LOGO LANMAR EMAS.png" class="reguler-logo">
             <h1 class="pangkat-title">INFO PERS LANMAR SURABAYA</h1>
-            <p class="pangkat-subtitle">PENSIUN PRAJURIT</p>
+           
         </div>
         
         <div class="syarat-box">
+
+             <h2 class="syarat-heading">
+                PENSIUN PRAJURI
+            </h2>
+            
             <ol class="syarat-list">
                 <li>FOTOCOPY SURAT TELEGRAM MPP / TIDAK MPP ANGGOTA</li>
                 <li>FOTOCOPY PERINCIAN SLIP GAJI TERAKHIR</li>
@@ -1659,7 +1697,7 @@ function logout() {
          <div class="reguler-back">
 
             <button class="btn secondary"
-                    onclick="showPage('pensiunPage')">
+                    onclick="showPage('PensiunPage')">
                 ⬅️ KEMBALI
             </button>
 
@@ -1670,7 +1708,7 @@ function logout() {
 
         </div>
 
-        <div class="footer">
+        <div class="footer" style="text-align:center;">
             CopyRight by @MasHar Tahun 2026
         </div>
     </div>
@@ -1678,7 +1716,7 @@ function logout() {
 
 <section id="mekanismePensiunPage" class="page">
     <div class="mekanisme-pensiun-page">
-        <div class="mekanismePensiunPage-header">
+        <div class="persyaratanPensiunPage-header">
 
             <img src="LOGO LANMAR EMAS.png"
                  class="reguler-logo"
@@ -1746,7 +1784,7 @@ function logout() {
         <div class="reguler-back">
 
             <button class="btn secondary"
-                    onclick="showPage('pensiunPage')">
+                    onclick="showPage('PensiunPage')">
                 ⬅️ KEMBALI
             </button>
 
@@ -1757,7 +1795,7 @@ function logout() {
 
         </div>
 
-        <div class="footer">
+        <div class="footer" style="text-align:center;">
             CopyRight by @MasHar Tahun 2026
         </div>
 
