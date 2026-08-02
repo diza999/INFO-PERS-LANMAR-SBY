@@ -846,10 +846,6 @@ body {
         max-height:250px;
     }
 
-    .menu-grid{
-        grid-template-columns:1fr;
-    }
-
     .pangkat-menu{
         grid-template-columns:1fr;
         justify-items:center;   /* Card di tengah */
@@ -859,12 +855,16 @@ body {
         box-sizing:border-box;
     }
 
+     .menu-grid{
+        display:grid;
+        grid-template-columns:minmax(0, 300px);
+        justify-content:center;
+        gap:15px;
+    }
+
     .menu-card{
         width:100%;
-        max-width:300px;        /* Lebar tombol dibatasi */
-        min-height:120px;
-        padding:15px;
-        justify-items:center;
+        box-sizing:border-box;
     }
 
     .pangkat-card{
