@@ -830,11 +830,10 @@ body {
     margin-top: 28px;
 }
 
-
 /* =====================================
    HALAMAN TAMPILAN HP
 ===================================== */
-@media (max-width: 800px){
+@media (max-width:800px){
 
     .login-box{
         padding:25px 20px;
@@ -850,12 +849,18 @@ body {
 
     .pangkat-menu{
         grid-template-columns:1fr;
-        gap:12px;
+        gap:15px;
+
+        width:100%;
+        max-width:340px;   /* Lebar menu dibatasi */
+        margin:0 auto;     /* Posisi di tengah */
     }
 
     .pangkat-card{
+        width:100%;
         min-height:120px;
         padding:15px;
+        box-sizing:border-box;
     }
 
     .pangkat-icon{
