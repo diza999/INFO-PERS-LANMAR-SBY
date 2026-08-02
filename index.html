@@ -56,6 +56,7 @@ body {
     padding:30px 20px;
     align-items:center;
     justify-content:center;
+    padding-top:70px;
 }
 
 .page.active {
@@ -224,6 +225,7 @@ body {
     width:100%;
     height:100vh;
     box-sizing:border-box;
+    padding-top:90px;
 
     background:
         linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
@@ -338,6 +340,7 @@ body {
     width:100%;
     height:100vh;
     box-sizing:border-box;
+    padding-top:90px;
 
     background:
         linear-gradient(rgba(20,20,20,.45), rgba(20,20,20,.45)),
@@ -367,6 +370,7 @@ body {
 #pangkatPage{
     padding:0 !important;
     overflow:hidden;
+    padding-top:90px;
 }
 
 
@@ -490,6 +494,7 @@ body {
    HALAMAN REGULER PERWIRA
 ===================================== */
 #regulerPerwiraPage{
+    padding-top:90px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -501,6 +506,7 @@ body {
 }
 
 #penghargaanPerwiraPage{
+    padding-top:90px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -516,6 +522,7 @@ body {
 ===================================== */
 
 #persyaratanPensiunPage{
+    padding-top:70px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");   /* Ganti dengan nama file background */
@@ -531,6 +538,7 @@ body {
     max-width:1050px;
     padding:35px;
     border-radius:22px;
+    padding-top:70px;
 
     background:
         linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
@@ -548,6 +556,7 @@ body {
 ===================================== */
 
 #penghargaanBintaraTamtamaPage{
+    padding-top:70px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -559,6 +568,7 @@ body {
 }
 
 #penghargaanPerwiraPage{
+    padding-top:70px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -576,6 +586,8 @@ body {
 
 #mekanismePensiunPage{
     width: 100%;
+    padding-top:70px;
+
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -590,6 +602,7 @@ body {
     width:100%;
     padding:35px;
     border-radius:22px;
+    padding-top:70px;
 
     background:
         linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
@@ -615,6 +628,7 @@ body {
 #PensiunPage{
     width:100%;
     height:100vh;
+    padding-top:70px;
 
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
@@ -638,6 +652,7 @@ body {
 
 #persyaratanPensiunPage{
     width: 100%;
+    padding-top:70px;
     background:
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("LOGIN.png");
@@ -652,6 +667,7 @@ body {
     width:100%;
     padding:35px;
     border-radius:22px;
+    padding-top:70px;
 
     background:
         linear-gradient(rgba(15,15,15,.55), rgba(15,15,15,.55)),
@@ -838,68 +854,203 @@ body {
 ===================================== */
 @media (max-width:800px){
 
+    /* ===================
+       LOGIN
+    =================== */
+
     .login-box{
+        width:100%;
+        max-width:380px;
         padding:25px 20px;
+    }
+
+    .login-logo{
+        width:140px;
+        height:auto;
+    }
+
+    .login-title{
+        font-size:22px;
+    }
+
+    /* ===================
+       NAVBAR
+    =================== */
+
+    .top-navbar{
+        height:50px;
+        padding:0 12px;
+    }
+
+    .nav-logo{
+        width:42px;
+    }
+
+    .nav-text1{
+        font-size:16px;
+    }
+
+    .nav-text2{
+        font-size:10px;
+        letter-spacing:1px;
+    }
+
+    .menu-btn{
+        font-size:30px;
+    }
+
+    .side-menu{
+        width:280px;
+    }
+
+    /* ===================
+       HALAMAN
+    =================== */
+
+    .page{
+        padding:80px 15px 25px;
+        padding-top:70px;
     }
 
     .logo{
         max-height:250px;
     }
 
-    .pangkat-menu{
-        grid-template-columns:1fr;
-        justify-items:center;   /* Card di tengah */
-        gap:15px;
+    /* ===================
+       DASHBOARD
+    =================== */
+
+    .dashboard{
         width:100%;
-        padding:0 20px;
-        box-sizing:border-box;
+        padding:20px 15px;
+        padding-top:70px;
     }
 
-     .menu-grid{
+    .dashboard-logo{
+        width:150px;
+    }
+
+    .dashboard-title{
+        font-size:28px;
+    }
+
+    /* ===================
+       MENU DASHBOARD
+    =================== */
+
+    .menu-grid{
         display:grid;
-        grid-template-columns:minmax(0, 300px);
+        grid-template-columns:1fr;
         justify-content:center;
         gap:15px;
     }
 
     .menu-card{
         width:100%;
+        min-height:120px;
+        box-sizing:border-box;
+    }
+
+    .menu-card h3{
+        font-size:18px;
+        line-height:1.3;
+    }
+
+    .menu-icon{
+        font-size:42px;
+    }
+
+    /* ===================
+       MENU PANGKAT
+    =================== */
+
+    .pangkat-menu{
+        display:grid;
+        grid-template-columns:1fr;
+        justify-items:center;
+        gap:15px;
+        width:100%;
+        padding:0 10px;
         box-sizing:border-box;
     }
 
     .pangkat-card{
         width:100%;
-        max-width:300px;        /* Lebar tombol dibatasi */
+        max-width:320px;
         min-height:120px;
         padding:15px;
     }
 
+    .pangkat-card h3{
+        font-size:15px;
+        line-height:1.3;
+    }
+
     .pangkat-icon{
-        font-size:30px;
+        font-size:32px;
         margin-bottom:8px;
     }
 
-    .pangkat-card h3{
-        font-size:14px;
-        line-height:1.3;
+    /* ===================
+       HALAMAN PANGKAT
+    =================== */
+
+    .pangkat-page{
+        padding:0 10px;
+        box-sizing:border-box;
     }
+
+    .kenkat-image{
+        width:100%;
+        min-width:100%;
+        height:auto;
+    }
+
+    /* ===================
+       PENSIUN
+    =================== */
 
     .syarat-box{
         padding:20px 15px;
     }
 
     .syarat-list li{
-        padding-left:45px;
+        padding-left:40px;
         font-size:14px;
+        line-height:1.5;
     }
 
-    .pangkat-page{
-    padding:0 20px;
-    box-sizing:border-box;
+    /* ===================
+       FORM
+    =================== */
+
+    input,
+    select,
+    textarea{
+        font-size:16px;
     }
 
-    .kenkat-image{
-        min-width:1000px;
+    /* ===================
+       BUTTON
+    =================== */
+
+    .btn{
+        width:100%;
+        margin-top:12px;
+    }
+
+    .btn.secondary{
+        margin-left:0;
+    }
+
+    /* ===================
+       FOOTER
+    =================== */
+
+    .footer{
+        font-size:13px;
+        margin-top:25px !important;
+        text-align:center;
     }
 
 }
@@ -921,7 +1072,7 @@ body {
 
     left: 50% !important;
     transform: translateX(-50%) !important;
-    bottom: 65px !important;
+    bottom: 40px !important;
 
     width: 130px !important;
     height: 42px !important;
@@ -1084,12 +1235,275 @@ body {
 }
 
 
+/* ===========================
+   NAVBAR
+=========================== */
+
+.top-navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:60px;
+
+    background:#203b70;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    z-index:9999;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.4);
+
+}
+
+.nav-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.nav-logo{
+
+    width:55px;
+
+}
+
+.nav-text1{
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.nav-text2{
+
+    color:#ffd54a;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+}
+
+.menu-btn{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.side-menu{
+
+    position:fixed;
+
+    top:0;
+
+    right:-340px;
+
+    width:340px;
+
+    height:100%;
+
+    background:#1d2433;
+
+    overflow:auto;
+
+    transition:.35s;
+
+    z-index:10000;
+
+}
+
+.side-menu.active{
+
+    right:0;
+
+}
+
+.menu-header{
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:#203b70;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+.menu-header button{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+.side-menu a{
+
+    display:block;
+
+    padding:14px 22px;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.side-menu a:hover{
+
+    background:#2b4d91;
+
+}
+
+.menu-title{
+
+    padding:15px 22px;
+
+    background:#2f3f58;
+
+    color:#ffd54a;
+
+    font-weight:bold;
+
+}
+
+
 </style>
 
 </head>
 
 
 <body>
+
+<!-- =========================
+     TOP NAVBAR
+========================= -->
+<header class="top-navbar">
+
+    <div class="nav-left">
+        <img src="LOGO LANMAR EMAS.png" class="nav-logo">
+
+        <div class="nav-title">
+            <div class="nav-text1">
+                INFO PERS
+            </div>
+
+            <div class="nav-text2">
+                LANMAR SURABAYA
+            </div>
+        </div>
+    </div>
+
+    <button class="menu-btn" onclick="openMenu()">
+        ☰
+    </button>
+
+</header>
+
+
+<div id="sideMenu" class="side-menu">
+
+    <div class="menu-header">
+
+        <span>MENU</span>
+
+        <button onclick="closeMenu()">✕</button>
+
+    </div>
+
+    <a href="#" onclick="showPage('homePage');closeMenu();">
+        🏠 Beranda
+    </a>
+
+    <div class="menu-title">
+        🎖️ Kenaikan Pangkat Prajurit
+    </div>
+
+    <a href="#" onclick="showPage('regulerPerwiraPage');closeMenu();">
+        • Kenaikan Pangkat Reguler Perwira
+    </a>
+
+    <a href="#" onclick="showPage('penghargaanPerwiraPage');closeMenu();">
+        • Kenaikan Pangkat Penghargaan Perwira
+    </a>
+
+    <a href="#" onclick="showPage('penghargaanBintaraPage');closeMenu();">
+        • Kenaikan Pangkat Penghargaan Bintara & Tamtama
+    </a>
+
+    <a href="#" onclick="showPage('tabelPangkatPage');closeMenu();">
+        • Tabel Kenaikan Pangkat
+    </a>
+
+    <div class="menu-title">
+        📋 Pensiun Prajurit
+    </div>
+
+    <a href="#" onclick="showPage('persyaratanPensiunPage');closeMenu();">
+        • Persyaratan Pensiun
+    </a>
+
+    <a href="#" onclick="showPage('mekanismePensiunPage');closeMenu();">
+        • Sistem & Mekanisme Pensiun
+    </a>
+
+    <div class="menu-title">
+        ⚙ Setting
+    </div>
+
+    <a href="https://wa.me/6281234567890" target="_blank">
+        • Hub @Mas Har Oke
+    </a>
+
+</div>
+
 
 <!-- =========================
      HALAMAN UTAMA
@@ -1580,78 +1994,6 @@ body {
 
 </section>
 
-<script>
-// =====================================
-// NAVIGASI HALAMAN
-// =====================================
-function showPage(pageId) {
-
-    // Sembunyikan semua halaman
-    document.querySelectorAll('.page').forEach(page => {
-        page.classList.remove('active');
-        page.style.display = '';
-    });
-
-    // Tampilkan halaman yang dipilih
-    const targetPage = document.getElementById(pageId);
-
-    if (targetPage) {
-        targetPage.classList.add('active');
-
-        // Home tidak bisa discroll
-        if (pageId === "homePage") {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "auto";
-        }
-
-        window.scrollTo({
-            top: 0,
-            behavior: "instant"
-        });
-    }
-}
-
-// =====================================
-// LOGIN SEDERHANA
-// Username : admin
-// Password : 123456
-// =====================================
-function login(event) {
-    event.preventDefault();
-
-    const username = document.getElementById('username').value.trim();
-    const password = document.getElementById('password').value;
-    const error = document.getElementById('loginError');
-
-    if (username === 'admin' && password === '123456') {
-
-        // Hilangkan pesan error
-        error.style.display = 'none';
-
-        // Kosongkan form
-        document.getElementById('username').value = '';
-        document.getElementById('password').value = '';
-
-        // Pindah ke Dashboard
-        showPage('dashboardPage');
-
-    } else {
-
-        error.style.display = 'block';
-    }
-}
-
-
-
-// =====================================
-// LOGOUT
-// =====================================
-function logout() {
-    showPage('homePage');
-}
-</script>
-
 
 <section id="PensiunPage" class="page">
     <div class="PensiunPage">
@@ -1826,3 +2168,116 @@ function logout() {
 
 </body>
 </html>
+
+
+
+
+
+<script>
+// =====================================
+// NAVIGASI HALAMAN
+// =====================================
+function showPage(pageId) {
+
+    // Sembunyikan semua halaman
+    document.querySelectorAll('.page').forEach(page => {
+        page.classList.remove('active');
+        page.style.display = '';
+    });
+
+    // Tampilkan halaman yang dipilih
+    const targetPage = document.getElementById(pageId);
+
+    if (targetPage) {
+        targetPage.classList.add('active');
+
+        // Home tidak bisa discroll
+        if (pageId === "homePage") {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        window.scrollTo({
+            top: 0,
+            behavior: "instant"
+        });
+    }
+}
+
+// =====================================
+// LOGIN SEDERHANA
+// Username : admin
+// Password : 123456
+// =====================================
+function login(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
+    const error = document.getElementById('loginError');
+
+    if (username === 'admin' && password === '123456') {
+
+        // Hilangkan pesan error
+        error.style.display = 'none';
+
+        // Tampilkan navbar
+        document.querySelector(".top-navbar").style.display = "flex";
+
+        // Kosongkan form
+        document.getElementById('username').value = '';
+        document.getElementById('password').value = '';
+
+        // Pindah ke Dashboard
+        showPage('dashboardPage');
+
+    } else {
+
+        error.style.display = 'block';
+
+    }
+}
+
+
+// =====================================
+// LOGOUT
+// =====================================
+function logout() {
+
+    // Sembunyikan navbar
+    document.querySelector(".top-navbar").style.display = "none";
+
+    // Tutup sidebar
+    closeMenu();
+
+    // Kembali ke Home
+    showPage('homePage');
+
+}
+
+
+function openMenu(){
+
+    document
+        .getElementById("sideMenu")
+        .classList.add("active");
+
+}
+
+function closeMenu(){
+
+    document
+        .getElementById("sideMenu")
+        .classList.remove("active");
+
+}
+
+window.onload = function(){
+
+    document.querySelector(".top-navbar").style.display = "none";
+
+}
+
+</script>
+
