@@ -91,18 +91,27 @@ body {
     font-size: 16px;
 }
 
-.btn {
-    border: none;
-    cursor: pointer;
-    padding: 14px 30px;
-    margin-top: 28px;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 700;
-    color: #171717;
-    background: linear-gradient(135deg, #fff176, #ffc107, #ff9800);
-    box-shadow: 0 7px 20px rgba(255, 193, 7, .25);
-    transition: .25s;
+.btn{
+    width:200px;
+    height:42px;
+    padding:0 20px;
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+
+    color:#171717;
+    background:linear-gradient(135deg,#fff176,#ffc107,#ff9800);
+
+    box-shadow:0 5px 15px rgba(255,193,7,.25);
+    transition:.25s;
 }
 
 .btn:hover {
@@ -1087,20 +1096,26 @@ body {
 
 /* Tombol */
 .btn{
-    width:170px;
-    height:48px;
-    padding:0 18px;
-    font-size:15px;
-    font-weight:600;
-    border-radius:10px;
+    width:200px;
+    height:42px;
+    padding:0 20px;
 
-    display:flex;
+    display:inline-flex;
     justify-content:center;
     align-items:center;
 
-    margin:0;
-    flex:none;
-    box-sizing:border-box;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+
+    color:#171717;
+    background:linear-gradient(135deg,#fff176,#ffc107,#ff9800);
+
+    box-shadow:0 5px 15px rgba(255,193,7,.25);
+    transition:.25s;
 }
 /* Hilangkan margin tombol kedua */
 .btn.secondary{
@@ -1126,54 +1141,6 @@ body {
     content: counter(syarat);
 }
 
-/* =========================================
-   TOMBOL WHATSAPP ADMIN
-   DI DALAM BACKGROUND DASHBOARD
-========================================= */
-
-#dashboardPage .admin-wa {
-    position: absolute !important;
-
-    right: 80px !important;
-    transform: translateX(-50%) !important;
-    bottom: 40px !important;
-
-    width: 130px !important;
-    height: 42px !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    gap: 7px !important;
-
-    background: #25D366 !important;
-    color: white !important;
-
-    border-radius: 10px !important;
-
-    text-decoration: none !important;
-
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .35) !important;
-
-    z-index: 9999 !important;
-
-    transition: all .25s ease !important;
-}
-
-#dashboardPage .admin-wa:hover {
-    background: #20bd5a !important;
-    transform: translateY(-2px) !important;
-}
-
-#dashboardPage .whatsapp-logo {
-    width: 30px !important;
-    height: 30px !important;
-}
 
 /* =========================================
    TOMBOL WHATSAPP ADMIN
@@ -1183,39 +1150,21 @@ body {
     position: relative !important;
 }
 
-.dashboard .admin-wa {
-    position: absolute !important;
+.dashboard .admin-wa{
+    width:200px !important;
+    height:42px !important;
 
-    right: 25px !important;
-    bottom: 25px !important;
+    display:inline-flex !important;
+    justify-content:center !important;
+    align-items:center !important;
 
-    width: 200px !important;
-    height: 42px !important;
+    border-radius:10px !important;
 
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    background:#25D366 !important;
+    color:#fff !important;
 
-    gap: 7px !important;
-
-    background: #25D366 !important;
-    color: #ffffff !important;
-
-    border-radius: 10px !important;
-
-    text-decoration: none !important;
-
-    font-family: "Segoe UI", Arial, sans-serif !important;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .35) !important;
-
-    z-index: 9999 !important;
-
-    cursor: pointer !important;
-
-    transition: all .25s ease !important;
+    font-size:15px !important;
+    font-weight:600 !important;
 }
 
 .dashboard .admin-wa:hover {
